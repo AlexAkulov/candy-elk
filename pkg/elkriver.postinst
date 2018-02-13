@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+# Initial installation: $1 == 1
+# Upgrade: $1 == 2
+
+#if [ $1 -eq 1 ] ; then
+  if ! getent group "elk" > /dev/null 2>&1 ; then
+    groupadd -r "elk"
+  fi
+  if ! getent passwd "elk" > /dev/null 2>&1 ; then
+    useradd -r -g elk -d /usr/share/elk -s /sbin/nologin \
+      -c "elk user" elk
+  fi
+
+  mkdir -p /var/log/elkriver
+  chown -R elk:elk /var/log/elkriver
+  chmod 755 /var/log/elkriver
+
+  if [ -x /bin/systemctl ] ; then
+    /bin/systemctl daemon-reload
+    /bin/systemctl enable elkriver.service
+  elif [ -x /sbin/chkconfig ] ; then
+    /sbin/chkconfig --add elkriver
+  fi
+#fi

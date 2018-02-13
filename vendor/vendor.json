@@ -1,0 +1,187 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "dE1TAdRkHqFphHxTyhU8QqZwlYM=",
+			"path": "github.com/VividCortex/gohistogram",
+			"revision": "51564d9861991fb0ad0f531c99ef602d0f9866e6",
+			"revisionTime": "2016-08-22T18:46:21Z"
+		},
+		{
+			"checksumSHA1": "be4ZtJClX3NvCtlA7/GHBD0e2UM=",
+			"path": "github.com/facebookgo/clock",
+			"revision": "600d898af40aa09a7a93ecb9265d87b0504b6f03",
+			"revisionTime": "2015-04-10T01:09:13Z"
+		},
+		{
+			"checksumSHA1": "qCuKHSLAap6AqlgqVmKqOFvzkdQ=",
+			"path": "github.com/facebookgo/limitgroup",
+			"revision": "6abd8d71ec01451d7f1929eacaa263bbe2935d05",
+			"revisionTime": "2015-06-12T19:09:41Z"
+		},
+		{
+			"checksumSHA1": "IElCUEuECHxNWiDinhWFpi0U6oQ=",
+			"path": "github.com/facebookgo/muster",
+			"revision": "fd3d7953fd52354a74b9f6b3d70d0c9650c4ec2a",
+			"revisionTime": "2015-07-08T23:28:44Z"
+		},
+		{
+			"checksumSHA1": "6sU3VtnPHYN0RoYpLBm2MZ8B04w=",
+			"path": "github.com/go-kit/kit/log",
+			"revision": "e10f5bf035be9af21fd5b2fb4469d5716c6ab07d",
+			"revisionTime": "2017-07-20T14:35:31Z"
+		},
+		{
+			"checksumSHA1": "fZsj7mYDQ/V3tWIOMtXCBmQT/tM=",
+			"path": "github.com/go-kit/kit/metrics",
+			"revision": "e10f5bf035be9af21fd5b2fb4469d5716c6ab07d",
+			"revisionTime": "2017-07-20T14:35:31Z"
+		},
+		{
+			"checksumSHA1": "9eLi8Ek42OhRwQJAnpduF/tV2uk=",
+			"path": "github.com/go-kit/kit/metrics/generic",
+			"revision": "e10f5bf035be9af21fd5b2fb4469d5716c6ab07d",
+			"revisionTime": "2017-07-20T14:35:31Z"
+		},
+		{
+			"checksumSHA1": "jDNZYItEtvtqnprj0reFXRSkaP4=",
+			"path": "github.com/go-kit/kit/metrics/graphite",
+			"revision": "e10f5bf035be9af21fd5b2fb4469d5716c6ab07d",
+			"revisionTime": "2017-07-20T14:35:31Z"
+		},
+		{
+			"checksumSHA1": "o+eqdQOkUY4mOQIsh3C3ubkpgO8=",
+			"path": "github.com/go-kit/kit/metrics/internal/lv",
+			"revision": "e10f5bf035be9af21fd5b2fb4469d5716c6ab07d",
+			"revisionTime": "2017-07-20T14:35:31Z"
+		},
+		{
+			"checksumSHA1": "ZYr3oEtSnqqDkho9TUp4GaINMLE=",
+			"path": "github.com/go-kit/kit/util/conn",
+			"revision": "e10f5bf035be9af21fd5b2fb4469d5716c6ab07d",
+			"revisionTime": "2017-07-20T14:35:31Z"
+		},
+		{
+			"checksumSHA1": "mOTUsKIuEf2jucl4ZdcXI7Kdcgw=",
+			"path": "github.com/go-logfmt/logfmt",
+			"revision": "390ab7935ee28ec6b286364bba9b4dd6410cb3d5",
+			"revisionTime": "2016-11-15T14:25:13Z"
+		},
+		{
+			"checksumSHA1": "m+auqoW0Rscdkubim0ZI39T/5D8=",
+			"path": "github.com/go-stack/stack",
+			"revision": "54be5f394ed2c3e19dac9134a40a95ba5a017f7b",
+			"revisionTime": "2017-07-10T16:04:46Z"
+		},
+		{
+			"checksumSHA1": "yIkYzW7bzAD81zHyuCNmEj4+oxQ=",
+			"path": "github.com/gopherjs/gopherjs/js",
+			"revision": "2b1d432c8a82c9bff0b0baffaeb3ec6e92974112",
+			"revisionTime": "2017-07-02T15:34:43Z"
+		},
+		{
+			"checksumSHA1": "QbL717OlMsstqZamWGrs4WOfpHQ=",
+			"path": "github.com/jessevdk/go-flags",
+			"revision": "96dc06278ce32a0e9d957d590bb987c81ee66407",
+			"revisionTime": "2017-07-20T12:40:56Z"
+		},
+		{
+			"checksumSHA1": "Js/yx9fZ3+wH1wZpHNIxSTMIaCg=",
+			"path": "github.com/jtolds/gls",
+			"revision": "77f18212c9c7edc9bd6a33d383a7b545ce62f064",
+			"revisionTime": "2017-05-03T22:40:06Z"
+		},
+		{
+			"checksumSHA1": "abKzFXAn0KDr5U+JON1ZgJ2lUtU=",
+			"path": "github.com/kr/logfmt",
+			"revision": "b84e30acd515aadc4b783ad4ff83aff3299bdfe0",
+			"revisionTime": "2014-02-26T03:06:59Z"
+		},
+		{
+			"checksumSHA1": "AikWjAOvWHSJ8G1iU+wNReZnyCk=",
+			"path": "github.com/smartystreets/assertions",
+			"revision": "4ea54c1f28ad3ae597e76607dea3871fa177e263",
+			"revisionTime": "2017-06-07T22:27:57Z"
+		},
+		{
+			"checksumSHA1": "Vzb+dEH/LTYbvr8RXHmt6xJHz04=",
+			"path": "github.com/smartystreets/assertions/internal/go-render/render",
+			"revision": "4ea54c1f28ad3ae597e76607dea3871fa177e263",
+			"revisionTime": "2017-06-07T22:27:57Z"
+		},
+		{
+			"checksumSHA1": "r6FauVdOTFnwYQgrKGFuWUbIAJE=",
+			"path": "github.com/smartystreets/assertions/internal/oglematchers",
+			"revision": "4ea54c1f28ad3ae597e76607dea3871fa177e263",
+			"revisionTime": "2017-06-07T22:27:57Z"
+		},
+		{
+			"checksumSHA1": "f4m09DHEetaanti/GqUJzyCBTaI=",
+			"path": "github.com/smartystreets/goconvey/convey",
+			"revision": "9e8dc3f972df6c8fcc0375ef492c24d0bb204857",
+			"revisionTime": "2017-06-02T16:46:21Z"
+		},
+		{
+			"checksumSHA1": "9LakndErFi5uCXtY1KWl0iRnT4c=",
+			"path": "github.com/smartystreets/goconvey/convey/gotest",
+			"revision": "9e8dc3f972df6c8fcc0375ef492c24d0bb204857",
+			"revisionTime": "2017-06-02T16:46:21Z"
+		},
+		{
+			"checksumSHA1": "FWDhk37bhAwZ2363D/L2xePwR64=",
+			"path": "github.com/smartystreets/goconvey/convey/reporting",
+			"revision": "9e8dc3f972df6c8fcc0375ef492c24d0bb204857",
+			"revisionTime": "2017-06-02T16:46:21Z"
+		},
+		{
+			"checksumSHA1": "or+Qx1frAQm0EhH64PnIPVZotqw=",
+			"path": "github.com/streadway/amqp",
+			"revision": "2cbfe40c9341ad63ba23e53013b3ddc7989d801c",
+			"revisionTime": "2017-07-07T20:29:55Z"
+		},
+		{
+			"checksumSHA1": "dr5+PfIRzXeN+l1VG+s0lea9qz8=",
+			"path": "golang.org/x/net/context",
+			"revision": "ab5485076ff3407ad2d02db054635913f017b0ed",
+			"revisionTime": "2017-07-19T21:11:51Z"
+		},
+		{
+			"checksumSHA1": "WHc3uByvGaMcnSoI21fhzYgbOgg=",
+			"path": "golang.org/x/net/context/ctxhttp",
+			"revision": "ab5485076ff3407ad2d02db054635913f017b0ed",
+			"revisionTime": "2017-07-19T21:11:51Z"
+		},
+		{
+			"checksumSHA1": "zoNLwFuvZ5OPzUu1FwDApA/hesw=",
+			"path": "gopkg.in/olivere/elastic.v3",
+			"revision": "5a75b7d18bca7420e68338600e8c9f611435f911",
+			"revisionTime": "2017-06-16T12:19:52Z"
+		},
+		{
+			"checksumSHA1": "lLdKOn9RPtFoTtPUNq5+sIInAiE=",
+			"path": "gopkg.in/olivere/elastic.v3/backoff",
+			"revision": "5a75b7d18bca7420e68338600e8c9f611435f911",
+			"revisionTime": "2017-06-16T12:19:52Z"
+		},
+		{
+			"checksumSHA1": "XQg6xG6l15Ke43KolthYYnVDCYo=",
+			"path": "gopkg.in/olivere/elastic.v3/uritemplates",
+			"revision": "5a75b7d18bca7420e68338600e8c9f611435f911",
+			"revisionTime": "2017-06-16T12:19:52Z"
+		},
+		{
+			"checksumSHA1": "ebwTWW3OuQjaw4sP4OTZ2Y6ncdY=",
+			"path": "gopkg.in/tomb.v2",
+			"revision": "d5d1b5820637886def9eef33e03a27a9f166942c",
+			"revisionTime": "2016-12-08T15:16:19Z"
+		},
+		{
+			"checksumSHA1": "71E5TMacehoLi2SszWkjlou529g=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "835086a6b6aa65939515e30b5d6c2eba43d7c075",
+			"revisionTime": "2017-07-21T08:55:56Z"
+		}
+	],
+	"rootPath": "github.com/alexakulov/candy-elk"
+}

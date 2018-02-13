@@ -1,0 +1,20 @@
+logfile: stdout
+loglevel: debug
+amqp:
+  url: amqp://guest:guest@localhost:5672
+  exchange: ""
+  key: ""
+  publish_timeout: 5
+  reconnect_interval: 2
+metrics:
+  enabled: true
+  graphite_connection_string: ""
+  graphite_prefix: DevOps
+http:
+  address: :8080
+  api_keys: {}
+  timeout: 30
+  idle_timeout: 300
+pprof:
+  enabled: "false"
+  listen: :6060

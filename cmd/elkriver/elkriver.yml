@@ -1,0 +1,23 @@
+logfile: stdout
+loglevel: debug
+amqp:
+  connections:
+  - url: amqp://guest:guest@localhost:5672
+    exchange: guest
+    key: guest
+    queue: guest
+    reconnect_interval: 2
+    wait_ack: "yes"
+elastic:
+  elasticsearch_url:
+  - http://localhost:9200
+  bulk_size: 1000
+  bulk_refresh_interval: 30
+  concurent_writes: 10
+metrics:
+  enabled: true
+  graphite_connection_string: ""
+  graphite_prefix: DevOps
+pprof:
+  enabled: "false"
+  listen: :6060
