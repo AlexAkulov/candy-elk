@@ -12,7 +12,6 @@ travis_test: prepare
 	go test -race -coverprofile=http_coverage.txt -covermode=atomic github.com/AlexAkulov/candy-elk/http
 	go test -race -coverprofile=amqp_coverage.txt -covermode=atomic github.com/AlexAkulov/candy-elk/amqp
 	cat http_coverage.txt amqp_coverage.txt > coverage.txt
-	bash <(curl -s https://codecov.io/bash)
 
 prepare:
 	go get "github.com/smartystreets/goconvey"

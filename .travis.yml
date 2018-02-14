@@ -8,6 +8,8 @@ addons:
       rpm
 install:
   - gem install fpm
-script: |
-  make travis_test && \
-  make rpm
+script:
+  - make travis_test
+  - make rpm
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
