@@ -1,0 +1,13 @@
+language: go
+sudo: false
+go:
+  - 1.9.3
+addons:
+  apt:
+    packages:
+      rpm
+install:
+  - gem install fpm
+script: |
+  make travis_test && \
+  make rpm

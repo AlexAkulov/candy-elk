@@ -8,6 +8,12 @@ test: prepare
 	go test ./http
 	go test ./amqp
 
+travis_test: prepare
+	go test ./http -race -coverprofile=http_coverage.txt -covermode=atomic
+	go test ./amqp -race -coverprofile=amqp_coverage.txt -covermode=atomic
+	cat http_coverage.txt amqp_coverage.txt > coverage.txt
+	bash <(curl -s https://codecov.io/bash)
+
 prepare:
 	go get "github.com/smartystreets/goconvey"
 
