@@ -1,7 +1,7 @@
 package scheduler
 
 import (
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 type Scheduler struct {

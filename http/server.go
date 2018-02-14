@@ -9,7 +9,7 @@ import (
 
 	"gopkg.in/tomb.v2"
 
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 const (

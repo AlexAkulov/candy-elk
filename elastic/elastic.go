@@ -7,7 +7,7 @@ import (
 	"github.com/facebookgo/muster"
 	"gopkg.in/olivere/elastic.v3"
 
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 // Publisher is an implementation of elkstreams.Publisher interface for publishing to Elasticsearch

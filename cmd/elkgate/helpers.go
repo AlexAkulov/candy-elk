@@ -4,7 +4,7 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 func mustStart(service elkstreams.Service) {

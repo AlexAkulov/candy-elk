@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 func (h *Server) decodeMessages(indexName string, indexType string, body io.Reader) ([]*elkstreams.LogMessage, error) {

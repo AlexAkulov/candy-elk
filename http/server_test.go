@@ -9,8 +9,8 @@ import (
 
 	. "github.com/smartystreets/goconvey/convey"
 
-	"github.com/alexakulov/candy-elk"
-	"github.com/alexakulov/candy-elk/logger"
+	"github.com/AlexAkulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk/logger"
 )
 
 func TestHTTP(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 	"github.com/streadway/amqp"
 	"gopkg.in/tomb.v2"
 
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 // Publisher is an AMQP implementation of elkstreams.Publisher interface

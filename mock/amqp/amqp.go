@@ -3,8 +3,8 @@ package amqp
 import (
 	"github.com/streadway/amqp"
 
-	"github.com/alexakulov/candy-elk"
-	publisheramqp "github.com/alexakulov/candy-elk/amqp"
+	"github.com/AlexAkulov/candy-elk"
+	publisheramqp "github.com/AlexAkulov/candy-elk/amqp"
 
 )
 

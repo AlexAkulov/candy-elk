@@ -8,8 +8,8 @@ import (
 	"github.com/streadway/amqp"
 	"gopkg.in/tomb.v2"
 
-	"github.com/alexakulov/candy-elk"
-	"github.com/alexakulov/candy-elk/helpers"
+	"github.com/AlexAkulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk/helpers"
 )
 
 const (

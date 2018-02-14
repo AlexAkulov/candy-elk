@@ -7,9 +7,9 @@ import (
 
 	"gopkg.in/olivere/elastic.v3"
 
-	"github.com/alexakulov/candy-elk"
-	"github.com/alexakulov/candy-elk/notifier/meta"
-	"github.com/alexakulov/candy-elk/notifier/scheduler"
+	"github.com/AlexAkulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk/notifier/meta"
+	"github.com/AlexAkulov/candy-elk/notifier/scheduler"
 )
 
 // Publisher is an implementation of elkstreams.Publisher interface for sending Notifications

@@ -10,7 +10,7 @@ import (
 	"gopkg.in/olivere/elastic.v3"
 	"gopkg.in/tomb.v2"
 
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 // CompareFunc is a function to compare field value and alter limit

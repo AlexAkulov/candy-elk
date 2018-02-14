@@ -10,9 +10,9 @@ import (
 	"github.com/go-kit/kit/log"
 	. "github.com/smartystreets/goconvey/convey"
 
-	"github.com/alexakulov/candy-elk/mock/amqp"
-	"github.com/alexakulov/candy-elk/http"
-	"github.com/alexakulov/candy-elk/metrics"
+	"github.com/AlexAkulov/candy-elk/mock/amqp"
+	"github.com/AlexAkulov/candy-elk/http"
+	"github.com/AlexAkulov/candy-elk/metrics"
 	"fmt"
 )
 

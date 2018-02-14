@@ -6,7 +6,7 @@ import (
 
 	"github.com/go-kit/kit/metrics/graphite"
 
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 // MetricStorage is a Graphite implementation of elkstreams.MetricStorage interface

@@ -1,7 +1,7 @@
 package meta
 
 import (
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 const indexSuffixLength = len("-2016-02-10")

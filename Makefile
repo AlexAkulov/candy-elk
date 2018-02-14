@@ -43,7 +43,7 @@ rpm_elkgate:
 		--description "ELK Gate" \
 		-C ./build/elkgate/ \
 		--vendor "SKB Kontur" \
-		--url "https://github.com/alexakulov/candy-elk" \
+		--url "https://github.com/AlexAkulov/candy-elk" \
 		--name "elkgate" \
 		--version "${VERSION}" \
 		--iteration "${RELEASE}" \
@@ -62,7 +62,7 @@ rpm_elkriver:
 		--description "ELK River" \
 		-C ./build/elkriver/ \
 		--vendor "SKB Kontur" \
-		--url "https://github.com/alexakulov/candy-elk" \
+		--url "https://github.com/AlexAkulov/candy-elk" \
 		--name "elkriver" \
 		--version "${VERSION}" \
 		--iteration "${RELEASE}" \

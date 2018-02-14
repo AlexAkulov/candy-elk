@@ -6,8 +6,8 @@ import (
 	. "github.com/smartystreets/goconvey/convey"
 	"github.com/streadway/amqp"
 
-	"github.com/alexakulov/candy-elk"
-	"github.com/alexakulov/candy-elk/logger"
+	"github.com/AlexAkulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk/logger"
 )
 
 func TestAMQP(t *testing.T) {

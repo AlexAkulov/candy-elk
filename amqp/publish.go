@@ -7,7 +7,7 @@ import (
 
 	"github.com/streadway/amqp"
 
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 // Publish publishes bulk to AMQP

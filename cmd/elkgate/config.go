@@ -6,10 +6,10 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/alexakulov/candy-elk/amqp"
-	"github.com/alexakulov/candy-elk/http"
-	"github.com/alexakulov/candy-elk/metrics"
-	"github.com/alexakulov/candy-elk/profiler"
+	"github.com/AlexAkulov/candy-elk/amqp"
+	"github.com/AlexAkulov/candy-elk/http"
+	"github.com/AlexAkulov/candy-elk/metrics"
+	"github.com/AlexAkulov/candy-elk/profiler"
 )
 
 type config struct {

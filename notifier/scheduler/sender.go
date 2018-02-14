@@ -8,7 +8,7 @@ import (
 
 	gomail "gopkg.in/gomail.v2"
 
-	"github.com/alexakulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk"
 )
 
 var tpl = template.Must(template.New("mail").Parse(`

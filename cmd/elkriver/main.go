@@ -8,10 +8,10 @@ import (
 
 	"github.com/jessevdk/go-flags"
 
-	"github.com/alexakulov/candy-elk/amqp"
-	"github.com/alexakulov/candy-elk/elastic"
-	"github.com/alexakulov/candy-elk/logger"
-	"github.com/alexakulov/candy-elk/profiler"
+	"github.com/AlexAkulov/candy-elk/amqp"
+	"github.com/AlexAkulov/candy-elk/elastic"
+	"github.com/AlexAkulov/candy-elk/logger"
+	"github.com/AlexAkulov/candy-elk/profiler"
 )
 
 var (

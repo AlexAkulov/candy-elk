@@ -4,8 +4,8 @@ import (
 	"net/http"
 	_ "net/http/pprof"
 
-	"github.com/alexakulov/candy-elk"
-	"github.com/alexakulov/candy-elk/helpers"
+	"github.com/AlexAkulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk/helpers"
 )
 
 // Profiler is implementation of Profiler
