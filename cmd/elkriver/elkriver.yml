@@ -6,9 +6,11 @@ amqp:
     exchange: guest
     key: guest
     queue: guest
+    prefetch_count: 1000
     reconnect_interval: 2
     wait_ack: "yes"
 elastic:
+  version: 2x
   elasticsearch_url:
   - http://localhost:9200
   bulk_size: 1000

@@ -8,8 +8,10 @@ import (
 
 	"github.com/jessevdk/go-flags"
 
+	"github.com/AlexAkulov/candy-elk"
 	"github.com/AlexAkulov/candy-elk/amqp"
-	"github.com/AlexAkulov/candy-elk/elastic"
+	"github.com/AlexAkulov/candy-elk/elastic/es2x"
+	"github.com/AlexAkulov/candy-elk/elastic/es6x"
 	"github.com/AlexAkulov/candy-elk/logger"
 	"github.com/AlexAkulov/candy-elk/profiler"
 )
@@ -66,9 +68,21 @@ func main() {
 	}
 	p.Start()
 
-	es := &elastic.Publisher{
-		Config: config.Publisher,
-		Log:    logger.With(log, "component", "publisher"),
+	var es elkstreams.Publisher
+	switch config.Publisher.Version {
+	case "2x":
+		es = &es2x.Publisher{
+			Config: config.Publisher,
+			Log:    logger.With(log, "component", "publisher"),
+		}
+	case "6x":
+		es = &es6x.Publisher{
+			Config: config.Publisher,
+			Log:    logger.With(log, "component", "publisher"),
+		}
+	default:
+		log.Error("msg", "bad elastic version, expected \"2x\" or \"6x\"")
+		os.Exit(1)
 	}
 	if err := es.Start(); err != nil {
 		log.Error("msg", "can't start publisher", "err", err)

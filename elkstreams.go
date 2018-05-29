@@ -10,7 +10,6 @@ type DecodedLogMessage struct {
 	Fields    map[string]interface{}
 }
 
-
 // LogMessage is a single log line
 type LogMessage struct {
 	IndexName string
@@ -21,5 +20,7 @@ type LogMessage struct {
 
 // Publisher is a way to publish logs
 type Publisher interface {
+	Start() error
+	Stop() error
 	Publish([]*LogMessage) error
 }

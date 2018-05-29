@@ -1,32 +1,33 @@
-package elastic
+package es6x
 
 import (
+	"context"
 	"encoding/json"
 	"time"
 
-	"github.com/facebookgo/muster"
-	"gopkg.in/olivere/elastic.v3"
-
 	"github.com/AlexAkulov/candy-elk"
+	"github.com/AlexAkulov/candy-elk/elastic"
+	"github.com/facebookgo/muster"
+	es6x "gopkg.in/olivere/elastic.v6"
 )
 
 // Publisher is an implementation of elkstreams.Publisher interface for publishing to Elasticsearch
 type Publisher struct {
-	Config Config
+	Config elastic.Config
 	Log    elkstreams.Logger
-	es     *elastic.Client
+	es     *es6x.Client
 	muster *muster.Client
 }
 
 // Start initializes Elasticsearch connection
 func (p *Publisher) Start() error {
 	var err error
-	p.es, err = elastic.NewClient(
-		elastic.SetURL(p.Config.ElasticUrls...),
-		elastic.SetErrorLog(p.Log),
-		elastic.SetHealthcheck(true),
-		elastic.SetHealthcheckTimeoutStartup(time.Second),
-		)
+	p.es, err = es6x.NewClient(
+		es6x.SetURL(p.Config.ElasticUrls...),
+		es6x.SetErrorLog(p.Log),
+		es6x.SetHealthcheck(true),
+		es6x.SetHealthcheckTimeoutStartup(time.Second),
+	)
 	if err != nil {
 		return err
 	}
@@ -82,15 +83,16 @@ func (b *bulk) Fire(notifier muster.Notifier) {
 	bulkRequest := b.Publisher.es.Bulk()
 	for i, _ := range b.Items {
 		bulkRequest.Add(
-			elastic.NewBulkIndexRequest().Index(b.Items[i].IndexName).Type(b.Items[i].IndexType).Doc(string(b.Items[i].Body)),
+			es6x.NewBulkIndexRequest().Index(b.Items[i].IndexName).Type(b.Items[i].IndexType).Doc(string(b.Items[i].Body)),
 		)
 	}
 	var (
-		res *elastic.BulkResponse
+		res *es6x.BulkResponse
 		err error
 	)
 	for {
-		res, err = bulkRequest.Do()
+		ctx := context.Background()
+		res, err = bulkRequest.Do(ctx)
 		if err != nil {
 			b.Publisher.Log.Error("msg", "failed write bulk to es", "err", err, "count", len(b.Items))
 			// Return messages to RabbitMQ
@@ -112,7 +114,7 @@ func (b *bulk) Fire(notifier muster.Notifier) {
 	b.Publisher.Log.Debug("msg", "bulk writed", "size", len(b.Items), "took", res.Took, "failed", len(failed))
 }
 
-func (p *Publisher) processLostMessages(failed []*elastic.BulkResponseItem) {
+func (p *Publisher) processLostMessages(failed []*es6x.BulkResponseItem) {
 	for i, res := range failed {
 		if i > 5 {
 			p.Log.Debug("msg", "Others response error details are omitted")
