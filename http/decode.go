@@ -26,7 +26,7 @@ func (h *Server) decodeMessages(indexName string, indexType string, body io.Read
 			if !isPrefix {
 				totalLines++
 				if err := h.checkMessage(line.Bytes()); err != nil {
-					h.Log.Debug("msg", err, "body", line)
+					h.Log.Debug("msg", err, "body", string(line.Bytes()))
 					badLines++
 				} else {
 					l := make([]byte, line.Len())
